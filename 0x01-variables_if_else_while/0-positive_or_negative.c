@@ -3,24 +3,22 @@
 #include <stdio.h>
 
 /**
-  *C programme that assign a number to a variable
   *main - Entry point
-  *Return zero; (success)
+  *Description: Get a random number for variable n
+  *and if n is positive or negative
+  *Return: always zero
   */
 int main(void)
 {
 		int n;
-		
+
 			srand(time(0));
 				n = rand() - RAND_MAX / 2;
-					printf("n is %d\n",n);
 					if (n > 0)
-						printf("%d is positive\n", n);
-					else if (n == 0)
-						printf("%d is 0\n", n);
+						printf("%i is positive\n", n);
 					else if (n < 0)
-						printf("%d is negative\n", n);
+						printf("%i is negative\n", n);
 					else
-						printf("Print don't be confused\n");
+						printf("%i is zero\n", n);
 					return (0);
 }
