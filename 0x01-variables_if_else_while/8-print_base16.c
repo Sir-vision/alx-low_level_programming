@@ -2,8 +2,8 @@
 
 /**
   *main - Entry point
-  *Description: prints all number of base 16
-  *return: always zero
+  *Description: prints all number of base 16 in lowercase
+  *Return: always zero
   */
 
 int main(void)
