@@ -9,30 +9,30 @@
 
 int main(void)
 {
-	int i;
+	int num = i;
 
-	for (i = 1; i <= 100; i++)
+	while (num++ < 100)
 	{
-		if
+		if ((num % 3 == 0) && (num % 5 == 0))
 		{
-			((i % 3 == 0) && (i % 5 == 0))
-				printf("number = %d FizzBuzz\n", i);
+			printf("FizzBuzz ");
 		}
-		else if
+		else if ((num % 3) == 0)
 		{
-			((i % 3) == 0)
-				printf("number = %d Fizz\n", i);
+			printf("Fizz ");
 		}
-		else if
+		else if ((num % 5) == 0)
 		{
-			((i % 5) == 0)
-				printf("number = %d Buzz\n", i);
+			if (num != 100)
+			{
+				printf("Buzz ");
+			}
+			else
+			{
+				printf("Buzz");
+			}
+			printf("\n");
 		}
-		else
-		{
-			printf("number = %d\n", i);
-		}
-		printf(" ", i);
 	}
-		return (0);
+	return (0);
 }
