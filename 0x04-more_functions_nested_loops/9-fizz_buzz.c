@@ -32,8 +32,9 @@ int main(void)
 			{
 				printf("Buzz");
 			}
+			printf(" ");
+		}
+		printf("\n");
 	}
-		printf(" ");
-			printf("\n");
 	return (0);
 }
