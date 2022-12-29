@@ -1,10 +1,11 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef __MAIN_H__
+#define __MAIN_H__
+
 #include <stdio.h>
 #include <stdlib.h>
 
 int _putchar(char c);
 char *create_array(unsigned int size, char c);
-ar *_strdup(char *str);
+char *_strdup(char *str);
 
 #endif
