@@ -43,10 +43,15 @@ char *str_concat(char *s1, char *s2)
 	if (!ptr)
 		return (NULL);
 
-	for (i = 0; s1[i]; i++)
+	for (i = 0; i < len_1; i++)
+	{
 		ptr[i] = s1[i];
-	for (j = 0; s2[j]; j++, i++)
+	}
+
+	for (j = 0; j < len_2; j++, i++)
+	{
 		ptr[i] = s2[j];
+	}
 	ptr[i] = '\0';
 	return (ptr);
 }
