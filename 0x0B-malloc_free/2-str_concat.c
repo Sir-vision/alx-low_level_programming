@@ -3,7 +3,7 @@
 /**
   * _strlen - Concatenates string
   * @str: string
-  * @len: string length
+  *
   * Return: 0
   */
 
